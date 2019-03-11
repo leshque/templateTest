@@ -1,24 +1,35 @@
 PODS:
+  - AppCenter (1.13.2):
+    - AppCenter/Analytics (= 1.13.2)
+    - AppCenter/Crashes (= 1.13.2)
+  - AppCenter/Analytics (1.13.2):
+    - AppCenter/Core
+  - AppCenter/Core (1.13.2)
+  - AppCenter/Crashes (1.13.2):
+    - AppCenter/Core
   - R.swift (5.0.0):
     - R.swift.Library (~> 5.0.0)
   - R.swift.Library (5.0.0)
   - SwiftLint (0.29.2)
 
 DEPENDENCIES:
+  - AppCenter
   - R.swift (= 5.0.0)
   - SwiftLint (= 0.29.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AppCenter
     - R.swift
     - R.swift.Library
     - SwiftLint
 
 SPEC CHECKSUMS:
+  AppCenter: bce7fe1098e8e8aeb70aaae1898600534069f549
   R.swift: f88c7d7d48a2be4dffa132dde1b3d389620310eb
   R.swift.Library: 0bf390e729bc10bb2c9e4fb78bd043164a7be4ff
   SwiftLint: 47df60bdea6e7e902b193b6596db8683aafd86a3
 
-PODFILE CHECKSUM: 68e215950f47c39fabd4f750b806e8047b34760b
+PODFILE CHECKSUM: d561a7ed666e2637228e2469f5f7ba35175ecaad
 
 COCOAPODS: 1.5.3

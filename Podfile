@@ -11,6 +11,7 @@ target 'TemplateTest' do
 
   pod 'R.swift', '5.0.0'
   pod 'SwiftLint', '0.29.2'
+  pod 'AppCenter'
 
   target 'TemplateTestTests' do
     inherit! :search_paths
