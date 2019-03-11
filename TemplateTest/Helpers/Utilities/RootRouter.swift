@@ -26,7 +26,7 @@ class RootRouter {
 
     func loadMainAppStructure() {
         // Customize your app structure here
-        let controller = LandingViewController(nibName: "LandingViewController", bundle: nil)
+        let controller = LandingViewController(nib: R.nib.landingViewController)
         controller.view.backgroundColor = UIColor.red
         setRootViewController(controller: controller, animatedWithOptions: nil)
     }

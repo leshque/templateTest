@@ -18,7 +18,7 @@ class LandingViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        welcomeLabel.text = "Hello World!"
+        welcomeLabel.text = R.string.localizable.landingMessageHello()
     }
 
     /*

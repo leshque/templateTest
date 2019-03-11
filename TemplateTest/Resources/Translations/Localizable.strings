@@ -10,3 +10,4 @@
 "common.ok" = "Ok";
 "common.cancel" = "Cancel";
 "common.error" = "Error";
+"landing.message.hello" = "Hello World!";
