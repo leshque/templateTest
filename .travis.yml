@@ -1,8 +1,15 @@
 language: swift
 osx_image: xcode10.1
+cache:
+  - bundler
 before_install:
   - gem install bundler
+install:
+  - bundle install
+  - bundle exec pod repo update --silent
+  - bundle exec pod install || { rm -rf ./Pods; bundle exec pod install; }
 script:
-    - bundle install
-    - bundle exec pod install
     - xcodebuild clean test -project TemplateTest.xcodeproj -scheme TemplateTest -destination "platform=iOS Simulator,name=iPhone X,OS=12.1" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
+notifications:
+  email:
+    - am.prokhorov@gmail.com
