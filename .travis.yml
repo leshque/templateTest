@@ -1,4 +1,7 @@
 language: swift
 osx_image: xcode10.1
 script:
+    - brew install bundler
+    - bundle install
+    - bundle exec pod install
     - xcodebuild clean test -project TemplateTest.xcodeproj -scheme TemplateTest -destination "platform=iOS Simulator,name=iPhone X,OS=12.1" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -quiet
